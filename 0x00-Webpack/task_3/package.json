@@ -1,19 +1,38 @@
 {
   "name": "task_3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dev servers, modules, and tree shaking",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "start-dev": "webpack-dev-server --open",
+    "build": "webpack --mode production",
+    "start": "webpack server"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "asset_compilation",
+    "entry_points",
+    "javascript",
+    "loaders",
+    "output",
+    "webpack_plugings"
+  ],
+  "author": "FOXAYA",
   "license": "ISC",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "html-webpack-plugin": "^5.6.3",
-    "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "image-webpack-loader": "^8.1.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21"
   }
 }
